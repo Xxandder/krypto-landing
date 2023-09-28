@@ -71,7 +71,6 @@ html, body{
 
 @media (width < 768px){
     ._container{
-       
-        padding: 0px 30px;
+        padding: 0px 16px;
     }
 }

@@ -115,6 +115,7 @@
 
 .header__gift-info{
     display: flex;
+    gap: 5px;
     align-items: center;
 }
 
@@ -126,6 +127,11 @@
     background-color: #fff;
     padding: 5px 16px;
     border-radius: 10px;
+}
+
+.header__gift-text{
+    font-family: Gilroy-Medium;
+    font-size: 16px;
 }
 
 .header__gift-description-digit{
