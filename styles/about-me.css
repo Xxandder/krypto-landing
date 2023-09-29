@@ -10,7 +10,8 @@
     font-family: RFDewiExpanded-Bold;
     font-size: 36px;
     text-transform: uppercase;
-    width: 484px;
+    max-width: 484px;
+    width: 70%;
 }
 
 .about-me__main{
@@ -26,6 +27,12 @@
     font-family: RFDewiExpanded-Bold;
     font-size: 32px;
     text-transform: uppercase;
+    position: relative;
+    z-index: 100;
+}
+
+.about-me__name span{
+    white-space: nowrap;
 }
 
 .about-me__profession{
@@ -33,15 +40,18 @@
     font-family: Gilroy-Bold;
     font-size: 28px;
     max-width: 424px;
+    position: relative;
+    z-index: 100;
 }
 
 .about-me__items{
     margin-top: 32px;
-    width: 55%;
+    width: 57%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 24px;
-   
+    position: relative;
+    z-index: 100;
 }
 
 .about-me__item{
@@ -64,18 +74,23 @@
     font-size: 16px;
 }
 
-
 .about-me__image{
     position: absolute;
-   bottom: -65px;
-   right: -45px;
-   transform: scale(0.8);
 }
 
-@media (width < 1176px){
+.about-me__image-desktop{
+   bottom: 0;
+   right: 0;
+}
+
+
+.about-me__image-mobile{
+    display: none;
+}
+
+@media (width < 1187px){
     .about-me__items{
-       
-        width: 60%;
+        width: 48%;
     }
 }
 
@@ -83,18 +98,84 @@
     .about-me__items{
         grid-template-columns: 1fr;
     }
-    .about-me__items{
-        width: 50%;
+    .about-me__image-desktop{
+        position: absolute;
+        bottom: -68px;
+        right: -46px;
+        transform: scale(0.8);
     }
-    
+    .about-me{
+        padding: 50px 0 0 0;
+    }
 }
 
 @media (width < 768px){
+    .about-me__header{
+        font-size: 26px;
+    }
+    .about-me__main{
+        margin-top: 20px;
+    }
+    .about-me__name{
+        font-size: 26px;
+        width: 60%;
+    }
+    .about-me__profession{
+        font-size: 22px;
+        width: 60%;
+    }
     .about-me__items{
         grid-template-columns: 1fr;
+        width: 80%;
+    }
+    .about-me__image-desktop{
+        display: none;
+    }
+    .about-me__image-mobile{
+        display: block;
+        transform: scale(1.5);
+        top: -100px;
+        right: 40px;
+    }
+}
+
+@media (width < 591px){
+    .about-me__image-mobile{
+        display: block;
+        transform: scale(1);
+        top: -105px;
+        right: 0;
     }
     .about-me__items{
-        width: 50%;
+        width: 75%;
     }
-    
+    .about-me__name{
+        font-size: 16px;
+    }
+    .about-me__profession{
+        font-size: 14px;
+        margin-top: 8px;
+    }
+    .about-me__item-text{
+        font-size: 12px;
+    }
+    .about-me__item-icon img{
+        width: 14px;
+        height: 14px;
+    }
+    .about-me__items{
+        margin-top: 16px;
+        gap: 12px;
+    }
+    .about-me__main{
+        padding: 26px 0 26px 12px;
+    }
+    .about-me__header{
+        font-size: 18px;
+    }
+}
+@media(width < 367px){
+    .about-me__header{
+        font-size: 16px;
+    }
 }
