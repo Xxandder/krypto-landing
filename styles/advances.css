@@ -127,7 +127,7 @@
 
 @media (width < 768px){
     .advances__container{
-        padding: 16px 16px;
+        padding: 16px 16px 0;
     }
     .get-to-masterclass-button{
         width: 100%;

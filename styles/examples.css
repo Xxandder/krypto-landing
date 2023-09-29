@@ -35,6 +35,12 @@
 
 }
 
+@media (width < 1024px){
+    .examples{
+        padding-top: 70px;
+    }
+}
+
 @media (width < 768px){
     .examples{
         padding-top: 50px;
@@ -60,5 +66,8 @@
     }
     .examples__header span{
         font-size: 24px;
+    }
+    .examples__text{
+        margin-top: 15px;
     }
 }
