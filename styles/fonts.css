@@ -59,11 +59,11 @@
   }
 
   @font-face {
-    font-family: 'RWDewiExpanded-Bold';
-    src: url('../fonts/RWDewiExpanded-Bold.eot');
-    src: url('../fonts/RWDewiExpanded-Bold.woff') format('woff'),
-         url('../fonts/RWDewiExpanded-Bold.ttf') format('truetype'),
-         url('../fonts/RWDewiExpanded-Bold.svg') format('svg');
+    font-family: 'RFDewiExpanded-Bold';
+    src: url('../fonts/RFDewiExpanded-Bold.eot');
+    src: url('../fonts/RFDewiExpanded-Bold.woff') format('woff'),
+         url('../fonts/RFDewiExpanded-Bold.ttf') format('truetype'),
+         url('../fonts/RFDewiExpanded-Bold.svg') format('svg');
     font-weight: 700;
     font-style: normal;
   }

@@ -26,12 +26,12 @@ h1, h2, h3, h4, h5, h6{
 
 html, body{
     height: 100%;
-    line-height: 1;
+    line-height: 1.15;
     font-size: 14px;
     color: #252B42;
-    font-family: Montserrat;
+    font-family: Gilroy-Regular;
     font-weight: 500;
-    background: #FAFAFA;;
+   
 }
 
 .wrapper{
@@ -39,12 +39,13 @@ html, body{
     overflow: hidden;
     display: flex;
     flex-direction: column;
+
 }
 
 ._container{
-    max-width: 1076px;
     margin: 0px auto;
-    padding: 0 15px;
+    max-width: 1176px;
+    
 }
 
 ._ibg{
@@ -60,3 +61,16 @@ html, body{
     object-fit: cover;
 }
 
+@media (width < 1319px){
+    ._container{
+        max-width: 1440px;
+        margin: 0px auto;
+        padding: 0px 50px;
+    }
+}
+
+@media (width < 768px){
+    ._container{
+        padding: 0px 16px;
+    }
+}
