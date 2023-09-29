@@ -1,0 +1,100 @@
+.about-me{
+    padding: 118px 0 0 0;
+}
+
+.about-me__container{
+
+}
+
+.about-me__header{
+    font-family: RFDewiExpanded-Bold;
+    font-size: 36px;
+    text-transform: uppercase;
+    width: 484px;
+}
+
+.about-me__main{
+    margin-top: 51px;
+    background-color: #F3EAD8;
+    padding: 40px 0 40px 32px;
+    border-radius: 15px;
+    position: relative;
+   overflow-y: visible;
+   overflow-x: visible;
+}
+
+.about-me__name{
+    font-family: RFDewiExpanded-Bold;
+    font-size: 32px;
+    text-transform: uppercase;
+}
+
+.about-me__profession{
+    margin-top: 16px;
+    font-family: Gilroy-Bold;
+    font-size: 28px;
+    max-width: 424px;
+}
+
+.about-me__items{
+    margin-top: 32px;
+    width: 55%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+   
+}
+
+.about-me__item{
+    
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.about-me__item-icon{
+
+}
+
+.about-me__item-icon img{
+
+}
+
+.about-me__item-text{
+    font-family: Gilroy-Semibold;
+    font-size: 16px;
+}
+
+
+.about-me__image{
+    position: absolute;
+    top: -202px;
+    right: -50px;
+}
+
+@media (width < 1176px){
+    .about-me__items{
+       
+        width: 60%;
+    }
+}
+
+@media (width < 1024px){
+    .about-me__items{
+        grid-template-columns: 1fr;
+    }
+    .about-me__items{
+        width: 50%;
+    }
+    
+}
+
+@media (width < 768px){
+    .about-me__items{
+        grid-template-columns: 1fr;
+    }
+    .about-me__items{
+        width: 50%;
+    }
+    
+}
