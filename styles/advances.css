@@ -1,0 +1,169 @@
+.advances{
+
+}
+
+.advances__container{
+    padding-top: 36px;
+}
+
+
+.get-to-masterclass-button{
+    display: block;
+    width: 529px;
+    font-family: Gilroy-Semibold;
+    margin: 0 auto;
+}
+
+.advances__content{
+    margin-top: 63px;
+    display: flex;
+    gap: 83px;
+    align-items: center;
+    
+}
+
+.adnvances__info{
+
+}
+
+.advances__main{
+    background-color: #F3EAD8;
+    padding: 32px 34px 25px 40px;
+    border-radius: 15px;
+}
+
+.advances__title{
+    font-family: RFDewiExpanded-Bold;
+    font-size: 36px;
+}
+
+.advances__text{
+    margin-top: 16px;
+    font-family: Gilroy-Medium;
+    font-size: 20px;
+    color: #122C2999
+}
+
+.advances__items{
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+}
+
+.advances__item{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-family: Gilroy-Bold;
+}
+
+.advances__item-icon{
+
+}
+
+.advances__item-text{
+
+}
+
+.advances__secondary{
+    margin-top: 16px;
+    background-color: #447F6D;
+    color: white;
+    border-radius: 15px;
+    padding: 5px 25px;
+    font-family: Gilroy-Bold;
+    font-size: 24px;
+    font-style: italic;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px
+}
+
+.advances__secondary-text{
+    flex: 0 1 333px;
+}
+
+.advances__image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.advances__image img{
+    width: 100%;
+    height: auto;
+}
+
+@media (width < 1024px){
+    .advances__main{
+        padding: 25px 20px;
+    }
+    .advances__image img{
+        width: 115%;
+        
+    }
+    .advances__content{
+        gap: 20px;
+    }
+    .advances__title{
+        font-size: 28px;
+    }
+    .advances__text{
+        margin-top: 10px;
+    }
+    .advances__items{
+        margin-top: 16px;
+        gap: 14px;
+    }
+    .advances__secondary-text{
+        font-size: 16px;
+    }
+    .advances__secondary-icon img{
+        width: 50px;
+    }
+}
+
+@media (width < 768px){
+    .advances__container{
+        padding: 16px 16px;
+    }
+    .get-to-masterclass-button{
+        width: 100%;
+        max-width: 529px;
+        font-size: 14px;
+    }
+    
+    .advances__content{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .advances__image img{
+        width: 70%;
+        height: auto;
+    }
+    .advances__image{
+        order: -1;
+    }
+    .advances__content{
+        margin-top: 16px;
+    }
+}
+
+@media (width < 425px){
+    .advances__title{
+        font-size: 18px;
+    }
+    .advances__text{
+        font-size: 16px;
+    }
+    .advances__items{
+        font-size: 14px;
+    }
+    .advances__item-icon img{
+        width: 40px;
+        height: 40px;
+    }
+    
+}

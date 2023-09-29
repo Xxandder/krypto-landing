@@ -3,7 +3,6 @@
 }
 
 .for-who__container{
-
 }
 
 .for-who__question{
@@ -26,19 +25,6 @@
     padding: 4px 20px 20px 20px;
     position: relative;
 }
-
-/* .for-who__item::after{
-    content: '';
-    position: absolute;
-    top: -10px;
-    right: -10px;
-    width: 60px;
-    height: 60px;
-    background-color: #447F6D;
-    background-image: url('../images/for-who-item-number.svg');
-    background-repeat: no-repeat;
-    background-position: center;
-} */
 
 .for-who-icon{
 
@@ -87,20 +73,6 @@
 .for-who__item:nth-child(5)::after{
     display: none;
 }
-/* .for-who__item:nth-child(5) .for-who-image{
-    position: relative;
-    width: 100%;
-}
-
-.for-who__item:nth-child(5) .for-who-image img{
-    width: 100%;
-    height: auto;
-}
-
-.for-who__item:nth-child(5) .for-who-image img::before{
-    width: 100%; 
-    height: auto;
-} */
 
 @media (width < 1167px){
     .for-who__item:nth-child(5) .for-who__text{
@@ -173,9 +145,7 @@
         width: 120px;
         height: 100%;
     }
-
     .for-who-icon img{
         width: 65px;
-        
     }
 }

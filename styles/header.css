@@ -98,19 +98,9 @@
     margin-left: 4px;
 }
 
+
 .header__participate-button{
-    display: inline-block;
-    background-color: #447F6D;
-    padding: 20px;
-    
-    color: white;
-    border-radius: 30px;
-   
-    text-align: center;
-    font-size: 18px;
-    line-height: 1.15;
-    font-family: Gilroy-Semibold;
-    letter-spacing: 2px;
+  
 }
 
 .header__gift-info{

@@ -1,0 +1,64 @@
+.examples{
+    padding-top: 110px;
+}
+
+.examples__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.examples__header{
+    font-family: RFDewiExpanded-Bold;
+    font-size:36px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.examples__header span{
+    font-size: 36px;
+}
+
+.examples__text{
+    margin-top: 24px;
+    max-width: 558px;
+    font-family: Gilroy-Medium;
+    font-size: 20px;
+    background-color: #F3EAD8;
+    padding: 16px 90px;
+    
+    text-align: center;
+    border-radius: 40px;
+}
+
+.examples__slider{
+
+}
+
+@media (width < 768px){
+    .examples{
+        padding-top: 50px;
+    }
+    .examples__header{
+        font-size: 26px;
+    }
+    .examples__header span{
+        font-size: 30px;
+    }
+    .examples__text{
+        font-size: 14px;
+        padding: 12px 26px;
+    }
+}
+
+@media (width < 425px){
+    .examples{
+        padding-top: 42px;
+    }
+    .examples__header{
+        font-size: 18px;
+    }
+    .examples__header span{
+        font-size: 24px;
+    }
+}
