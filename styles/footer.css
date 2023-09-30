@@ -78,6 +78,9 @@
 }
 
 @media (width < 768px){
+    .footer{
+        margin-top: 75px;
+    }
     .footer__container{
         padding: 30px 30px 29px;
     }
@@ -104,7 +107,9 @@
 }
 
 @media (width < 425px){
+    
     .footer{
+        margin-top: 26px;
         border-top-right-radius: 30px;
         border-top-left-radius: 30px;
     }
