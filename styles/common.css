@@ -18,3 +18,7 @@
 .capital-letters{
     text-transform: uppercase;
 }
+
+.visually-hidden{
+    display: none;
+}
