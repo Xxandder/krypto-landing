@@ -1,7 +1,9 @@
 .header{
-    background: linear-gradient(61.76deg, #F3EAD8 29.62%, rgba(243, 234, 216, 0) 95.28%);
+
+    background: url('../images/buildings-background.png') right no-repeat,linear-gradient(61.76deg, #F3EAD8 29.62%, rgba(243, 234, 216, 0) 95.28%);
     border-bottom-left-radius: 50px;
     border-bottom-right-radius: 50px;
+    
 }
 
 .header__wrapper{
