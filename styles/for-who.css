@@ -22,24 +22,34 @@
 .for-who__item{
     background-color: #F3EAD8;
     border-radius: 10px;
-    padding: 4px 20px 20px 20px;
+    padding: 80px 20px 20px 20px;
     position: relative;
+   
+}
+
+.for-who__item:not(:nth-child(5)){
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
 .for-who-icon{
-
+    position: absolute;
+    top: 13px;
+    left: 16px;
 }
 
 .for-who__title{
-    margin-top: 20px;
+    /* margin-top: auto; */
     font-family: Gilroy-Bold;
     font-size: 18px;
 }
 
 .for-who__text{
     margin-top: 10px;
-    font-size: Gilroy-Medium;
+    font-family: Gilroy-Medium;
     font-size: 16px;
+    color: black;
 }
 
 .for-who__number{
@@ -52,6 +62,7 @@
    display: flex;
    align-items: center;
    justify-content: center;
+   border-radius: 5px;
 }
 
 .for-who__item:nth-child(5){
@@ -59,7 +70,7 @@
     display: flex;
     align-items: center;
     background-color: #447F6D;
-    
+    padding: 9px 32px 9px 7px;
 }
 
 .for-who__item:nth-child(5) .for-who__text{
@@ -67,6 +78,8 @@
     font-size: 26px;
     color: white;
     margin-left: 15px;
+    line-height: 1.13;
+    letter-spacing: 0.2;
   
 }
 
@@ -74,7 +87,11 @@
     display: none;
 }
 
-@media (width < 1167px){
+.for-who-icon img{
+    width: 71px;
+}
+
+@media (max-width: 1167px){
     .for-who__item:nth-child(5) .for-who__text{
         font-size: 20px;
     }
@@ -89,7 +106,8 @@
     }
 }
 
-@media (width < 768px){
+@media (max-width: 768px){
+   
     .for-who{
         padding-top: 42px;
     }
@@ -122,9 +140,9 @@
     
 }
 
-@media (width < 591px){
+@media (max-width: 591px){
     .for-who__item{
-        padding: 0 23px 16px 20px;
+        padding: 80px 23px 16px 20px;
         
     }
     .for-who__text{
@@ -147,5 +165,27 @@
     }
     .for-who-icon img{
         width: 65px;
+    }
+}
+
+@media (max-width: 425px){
+    .for-who__number img{
+        width: 8px;
+        height: 13px;
+    }
+    .for-who__number{
+        width: 44px;
+        height: 44px;
+        top: -16px;
+        right: 0;
+    }
+    .for-who-icon img{
+        width: 53px;
+    }
+    .for-who__title{
+        font-size: 16px;
+    }
+    .for-who__text{
+        font-size: 14px;
     }
 }

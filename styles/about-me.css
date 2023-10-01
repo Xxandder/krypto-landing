@@ -88,13 +88,13 @@
     display: none;
 }
 
-@media (width < 1187px){
+@media (max-width: 1187px){
     .about-me__items{
         width: 48%;
     }
 }
 
-@media (width < 1024px){
+@media (max-width: 1024px){
     .about-me__items{
         grid-template-columns: 1fr;
     }
@@ -109,7 +109,7 @@
     }
 }
 
-@media (width < 768px){
+@media (max-width: 768px){
     .about-me__header{
         font-size: 26px;
     }
@@ -139,7 +139,7 @@
     }
 }
 
-@media (width < 591px){
+@media (max-width: 591px){
     .about-me__image-mobile{
         display: block;
         transform: scale(1);
@@ -174,7 +174,7 @@
         font-size: 18px;
     }
 }
-@media(width < 367px){
+@media(max-width: 367px){
     .about-me__header{
         font-size: 16px;
     }

@@ -16,7 +16,7 @@
                 <div class="after-registration__content">
                     <div class="after-registration__title">
                         ви зареєстровані на майстер-клас
-                         <span class="green-text">дата</span>
+                         <span class="green-text date">дата</span>
                     </div>
                     <div class="after-registration__subtitle">
                         Як почати безпечно отримувати дохід <span class="green-text">від 1000 $ 
@@ -39,7 +39,7 @@
                           якщо не побачите повідомлення
                     </div>
                     <div class="after-registration__text after-registration__text_bold">
-                        Або переходьте у Телеграм. Там ви дізнажтесь перші 3 кроки виходу на дохід 1000$/міс з нуля і безкоштовно
+                        Або переходьте у Телеграм. Там ви дізнаєтесь перші 3 кроки виходу на дохід 1000$/міс з нуля і безкоштовно
                     </div>
                     <div class="after-registration__button button">
                         Перейти у Телеграм
@@ -54,11 +54,23 @@
                             @seleznevairen
                         </div>
                     </div>
-                    <img src="/images/after-registration-image.png" alt="">
+                    <img src="/krypto-land/images/after-registration-image.png" alt="">
                 </div>
             </div>
         </div>
     </div>
-  
+    <script>
+        const today = new Date();
+        const tomorrow = new Date();
+        tomorrow.setDate(today.getDate() + 1);
+        const day = tomorrow.getDate(); 
+        const month = tomorrow.getMonth() + 1; 
+        const formattedDay = day < 10 ? '0' + day : day.toString();
+        const formattedMonth = month < 10 ? '0' + month : month.toString();
+        const tomorrowDate = formattedDay + '.' + formattedMonth;
+
+        document.querySelector('.after-registration__title span').innerHTML = tomorrowDate;
+        
+    </script>
 </body>
 </html>

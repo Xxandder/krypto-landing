@@ -11,6 +11,7 @@
     display: block;
     width: 529px;
     font-family: Gilroy-Semibold;
+    font-size: 16px;
     margin: 0 auto;
 }
 
@@ -63,7 +64,7 @@
 }
 
 .advances__item-text{
-
+    font-size: 20px;
 }
 
 .advances__secondary{
@@ -96,7 +97,7 @@
     height: auto;
 }
 
-@media (width < 1024px){
+@media (max-width: 1024px){
     .advances__main{
         padding: 25px 20px;
     }
@@ -125,7 +126,7 @@
     }
 }
 
-@media (width < 768px){
+@media (max-width: 768px){
     .advances__container{
         padding: 16px 16px 0;
     }
@@ -149,9 +150,12 @@
     .advances__content{
         margin-top: 16px;
     }
+    .advances__item-text{
+        font-size: 17px;
+    }
 }
 
-@media (width < 425px){
+@media (max-width: 425px){
     .advances__title{
         font-size: 18px;
     }
@@ -164,6 +168,13 @@
     .advances__item-icon img{
         width: 40px;
         height: 40px;
+    }
+    .advances__item-text{
+        font-size: 14px;
+    }
+    .get-to-masterclass-button{
+        font-size: 14px;
+        padding: 13px 0;
     }
     
 }

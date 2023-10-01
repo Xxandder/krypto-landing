@@ -71,13 +71,13 @@
 
 }
 
-@media (width < 1024px){
+@media (max-width: 1024px){
     .footer__img img{
         width: 250px;
     }
 }
 
-@media (width < 768px){
+@media (max-width: 768px){
     .footer{
         margin-top: 75px;
     }
@@ -106,7 +106,7 @@
     }
 }
 
-@media (width < 425px){
+@media (max-width: 425px){
     
     .footer{
         margin-top: 26px;

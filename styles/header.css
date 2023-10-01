@@ -1,6 +1,6 @@
 .header{
 
-    background: url('../images/buildings-background.png') right center/cover no-repeat,linear-gradient(61.76deg, #F3EAD8 29.62%, rgba(243, 234, 216, 0) 95.28%);
+    background: url('/krypto-land/images/buildings-background.png') right center/cover no-repeat,linear-gradient(61.76deg, #F3EAD8 29.62%, rgba(243, 234, 216, 0) 95.28%);
     
     border-bottom-left-radius: 50px;
     border-bottom-right-radius: 50px;
@@ -10,7 +10,6 @@
 .header__wrapper{
     padding: 122px 0 74px;
     position: relative;
-
 }
 
 .header__title{
@@ -39,12 +38,13 @@
 }
 
 .header__title-info{
-    font-family: Gilroy-Regular;
+    font-family: Gilroy-Medium !important;
     font-size: 16px;
     line-height: 1.15;
     max-width: 445px;
     margin-top: 20px;
     color: #122C2999;
+    letter-spacing: 0.2;
 }
 
 .header-info{
@@ -125,6 +125,7 @@
 .header__gift-text{
     font-family: Gilroy-Medium;
     font-size: 16px;
+    color: #122C29;
 }
 
 .header__gift-description-digit{
@@ -174,7 +175,7 @@
 .person_instagram::before{
     content: '';
     position: absolute;
-    background-image: url('../images/instagram-logo.png');
+    background-image: url('/krypto-land/images/instagram-logo.png');
     width: 100%;
     height: 100%;
     top: 0px;
@@ -184,7 +185,7 @@
     background-repeat: no-repeat;  
 }
 
-@media (width >= 768px){
+@media (min-width: 768px){
     .header__person{
         position: absolute;
         right: 0px;
@@ -235,7 +236,7 @@
 
 
 
-@media (width < 1150px){
+@media (max-width: 1150px){
     .person__background-left-top{
         display: none;
     }
@@ -250,7 +251,7 @@
     
 }
 
-@media (width <= 1024px){
+@media (max-width: 1024px){
     
     .header__main-title{
         font-size: 30px;
@@ -271,7 +272,7 @@
     }
 }
 
-@media (width < 825px){
+@media (max-width: 825px){
     .header-info{
         max-width: 350px;
     }
@@ -285,7 +286,7 @@
     }
 }
 
-@media (width < 768px){
+@media (max-width: 768px){
     .header{
         background: linear-gradient(61.76deg, #F3EAD8 29.62%, rgba(243, 234, 216, 0) 95.28%);
     }
@@ -397,9 +398,12 @@
 
 }
 
-@media (width < 591px){
+@media (max-width: 591px){
     .header__main-title{
-        font-size: 20px;
+        font-size: 18px;
+   }
+   .header__title-info{
+    font-size: 16px;
    }
    .header__secondary-title{
     font-size: 11px;
@@ -408,7 +412,21 @@
 }
 
 @media (width < 425px){
+    .header__wrapper{
+        padding: 48px 0 30px;
+        position: relative;
+    }
+    .header__main-title{
+        margin-top: 20px;
+       font-size: 18px;
+   }
+   .header__title-info{
+    margin-top: 8px;
+    font-size: 14px;
+    max-width: 345px;
+   }
     .header__person{
+        top: 0px;
         margin-top: -70px;
         transform: scale(0.6);
     }
@@ -419,6 +437,7 @@
         transform: scale(1.5);
     }
     .header-info{
+        margin-top: -80px;
         gap: 20px;
     }
     .timer__digits{
@@ -428,7 +447,8 @@
         font-size: 11px;
     }
     .header__participate-button{
-        font-size: 14px;
+        font-size: 14px !important;
+        padding: 13px 0;
     }
     .header__gift-description-digit-text{
         font-size: 11px;
@@ -436,5 +456,16 @@
     .header__gift-text{
         font-size: 11px;
     }
+    .header__gift-description-digit{
+        font-size: 24px;
+    }
+    .header__gift-description{
+        padding: 4px 10px 6px 8px;
+    }
+    .header__participate-button{
+        font-size: 14px !important;
+        padding: 13px 0 !important;
+    }
 }
+
 

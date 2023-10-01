@@ -11,12 +11,12 @@
 .examples__header{
     font-family: RFDewiExpanded-Bold;
     font-size:36px;
-    background-color: #fff;
+  
     text-align: center;
 }
 
 .examples__header span{
-    font-size: 36px;
+    font-size: 44px;
 }
 
 .examples__text{
@@ -26,7 +26,7 @@
     font-size: 20px;
     background-color: #F3EAD8;
     padding: 16px 90px;
-    
+    color: #122C29;
     text-align: center;
     border-radius: 40px;
 }
@@ -35,13 +35,13 @@
 
 }
 
-@media (width < 1024px){
+@media (max-width: 1024px){
     .examples{
         padding-top: 70px;
     }
 }
 
-@media (width < 768px){
+@media (max-width: 768px){
     .examples{
         padding-top: 50px;
     }
@@ -57,7 +57,7 @@
     }
 }
 
-@media (width < 425px){
+@media (max-width: 425px){
     .examples{
         padding-top: 42px;
     }

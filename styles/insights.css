@@ -24,7 +24,7 @@
 
 .insights__item_title{
     grid-column: span 2;
-    background-color: #fff;
+    background-color: transparent;
     font-family: RFDewiExpanded-Bold;
     font-size: 36px;
     text-transform: uppercase;
@@ -49,6 +49,10 @@
 
 .insights__item_main .insights__number{
     color: inherit;
+}
+
+.insights__item_main .insights__text{
+    color: #fff;
 }
 
 .insights__item_regular{
@@ -109,7 +113,14 @@
     border-radius: 5px;
 }
 
-@media (width < 1078px){
+.insights__text{
+    font-family: Gilroy-Medium;
+    font-size: 16px;
+    color: #122C29;
+    letter-spacing: 0.02;
+}
+
+@media (max-width: 1078px){
     .insights__item_main .insights__text{
         max-width: 60%;
         
@@ -129,7 +140,7 @@
     
 }
 
-@media (width < 876px){
+@media (max-width: 876px){
     .insights{
         margin-top: -100px;
     }
@@ -145,7 +156,7 @@
     }
 }
 
-@media (width < 768px){
+@media (max-width: 768px){
     .insights__grid{    
         grid-template-columns: 1fr;  
         grid-auto-rows: 150px;
@@ -175,7 +186,7 @@
     
 }
 
-@media (width < 425px){
+@media (max-width: 425px){
     .insights{
         margin-top: -175px;
     }

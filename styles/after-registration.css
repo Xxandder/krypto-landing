@@ -47,7 +47,7 @@
 }
 
 .loading__inner{
-    height: 28px;
+    height: 29px;
     width: 65%;
     background-color: #447F6D;
     border-radius: 15px;
@@ -102,7 +102,7 @@
 .person_instagram::before{
     content: '';
     position: absolute;
-    background-image: url('../images/instagram-logo.png');
+    background-image: url('/krypto-land/images/instagram-logo.png');
     width: 100%;
     height: 100%;
     top: 0px;
@@ -112,7 +112,7 @@
     background-repeat: no-repeat;  
 }
 
-@media (width < 1024px){
+@media (max-width: 1024px){
     .after-registration__image img{
         width: 500px;
     }
@@ -122,7 +122,7 @@
     }
 }
 
-@media (width < 896px){
+@media (max-width: 896px){
     .after-registration__image img{
         width: 400px;
     }
@@ -132,7 +132,7 @@
     }
 }
 
-@media (width < 768px){
+@media (max-width: 768px){
     .after-registration{
         padding: 20px 0 114px;
     }
@@ -164,7 +164,7 @@
    
 }
 
-@media (width < 425px){
+@media (max-width: 425px){
     .after-registration__title{
         font-size: 20px;
     }
@@ -181,8 +181,8 @@
     }
     .after-registration__button{
         margin-top: 16px;
-        padding: 14px;
-        font-size: 13px;
+        padding: 13px;
+        font-size: 14px;
     }
     .loading__value{
         font-size: 14px;

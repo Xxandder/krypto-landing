@@ -31,7 +31,8 @@ html, body{
     color: #252B42;
     font-family: Gilroy-Regular;
     font-weight: 500;
-   
+    background-color: #FAFDF3;
+   color: #122C29
 }
 
 .wrapper{
@@ -45,7 +46,7 @@ html, body{
 ._container{
     margin: 0px auto;
     max-width: 1176px;
-    
+
 }
 
 ._ibg{
@@ -61,7 +62,7 @@ html, body{
     object-fit: cover;
 }
 
-@media (width < 1319px){
+@media (max-width: 1319px){
     ._container{
         max-width: 1440px;
         margin: 0px auto;
@@ -69,7 +70,7 @@ html, body{
     }
 }
 
-@media (width < 768px){
+@media (max-width: 768px){
     ._container{
         padding: 0px 16px;
     }

@@ -36,27 +36,24 @@
 
 
 .carousel__item:nth-child(1) {
-  background-image: url('../images/review-screenshot-1.png');
+  background-image: url('/krypto-land/images/review-screenshot-1.png');
 }
 .carousel__item:nth-child(2) {
-  background-image: url('../images/review-screenshot-1.png');
+  background-image: url('/krypto-land/images/review-screenshot-1.png');
 }
 .carousel__item:nth-child(3) {
-  background-image: url('../images/review-screenshot-1.png');
+  background-image: url('/krypto-land/images/review-screenshot-1.png');
 }
 .carousel__item:nth-child(4) {
-  background-image: url('../images/review-screenshot-1.png');
+  background-image: url('/krypto-land/images/review-screenshot-1.png');
 }
 .carousel__item:nth-child(5) {
-  background-image: url('../images/review-screenshot-1.png');
+  background-image: url('/krypto-land/images/review-screenshot-1.png');
 }
 .carousel__item[data-pos="0"] {
   z-index: 5;
 }
-.carousel__item[data-pos="-1"], .carousel__item[data-pos="1"] {
-  /* opacity: 0.7; */
-  filter: blur(1px) grayscale(10%);
-}
+
 .carousel__item[data-pos="-1"] {
   transform: translateX(-258px) scale(0.85);
   z-index: 4;
@@ -65,28 +62,42 @@
   transform: translateX(258px) scale(0.85);
   z-index: 4;
 }
-.carousel__item[data-pos="-2"], .carousel__item[data-pos="2"] {
-  /* opacity: 0.4; */
-  filter: blur(3px) grayscale(20%);
-}
+
 .carousel__item[data-pos="-2"] {
   transform: translateX(-450px) scale(0.5);
   z-index: 3;
 }
+
+.carousel__item[data-pos="-2"]::before,
+.carousel__item[data-pos="2"]::before,
+.carousel__item[data-pos="1"]::before,
+.carousel__item[data-pos="-1"]::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
 .carousel__item[data-pos="2"] {
   transform: translateX(450px) scale(0.5);
   z-index: 3;
 }
 
+
+
 .carousel__right-button, .carousel__left-button{
   z-index: 1000;
+  cursor: pointer;
 }
 
 .carousel__right-button{
   order: 1;
 }
 
-@media (width < 1287px){
+@media (max-width: 1287px){
   .carousel__item{
     transform: scale(0.8);
   }
@@ -108,7 +119,7 @@
   }
 }
 
-@media (width < 1071px){
+@media (max-width: 1071px){
   .carousel__item[data-pos="-1"] {
     transform: translateX(-120px) scale(0.68);
   }
@@ -123,14 +134,14 @@
   }
 }
 
-@media (width < 768px){
+@media (max-width: 768px){
   .slider{
     margin-top: -20px;
   }
   
 }
 
-@media (width < 592px){
+@media (max-width: 592px){
   .carousel__item[data-pos="-2"] {
     transform: translateX(-0px) scale(0.4);
   }
@@ -139,7 +150,7 @@
   }
 }
 
-@media (width < 475px){
+@media (max-width:475px){
   .slider{
     margin-top: -75px;
     margin-bottom: -85px;

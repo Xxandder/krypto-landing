@@ -13,6 +13,7 @@
     line-height: 1.15;
     font-family: Gilroy-Semibold;
     letter-spacing: 2px;
+    cursor: pointer;
 }
 
 .capital-letters{
@@ -21,4 +22,8 @@
 
 .visually-hidden{
     display: none;
+}
+
+.date{
+    white-space: nowrap !important;
 }
